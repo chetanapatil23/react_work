@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import { useState } from "react"
+import Section1 from "./Section1"
+import Section2 from "./Section2"
+import Fromhandling from "./Formhandling"
+import Notes from "./Notes"
+const App = () => {
+  const[count,setcount]=useState(10)
+  function btn(){
+   {/* const newobj={...count}
+    newobj.user="disha"
+    newobj.age=15
+   setcount(newobj)
+   newarr.push(50)*/}
+  //this is batching concept in reCtat
+  // setcount(val=>(val+1))
+   //setcount(val=>(val+1))
+  setcount(val=>(val+1))
+   
+ 
+  }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+   
+    <Notes/>
+    <h3>{count}</h3>
+   <button className="bg-blue-100 rounded-2xl"onClick={btn}>click</button>
     </>
   )
 }
