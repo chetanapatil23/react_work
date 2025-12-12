@@ -13,7 +13,7 @@ const [menuOpen, setMenuOpen] = useState(false);
     <>
       <Router>
         <nav>
-             <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+             <Navbar menuOpen={menuOpen}setMenuOpen={setMenuOpen} />
           {/*<Link to="/Hero">Hero</Link>|*/}
       
         </nav>
@@ -22,6 +22,7 @@ const [menuOpen, setMenuOpen] = useState(false);
           <Route path="/About" element={<About />} />
         </Routes>
       </Router>
+
     </>
   )
 }

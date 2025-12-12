@@ -1,12 +1,13 @@
-import { useState } from "react"
 import Section1 from "./Section1"
 import Section2 from "./Section2"
 import Fromhandling from "./Formhandling"
 import Notes from "./Notes"
+import Navbaar from "./Navbaar"
+import RightContent from "./RightContent"
 const App = () => {
-  const[count,setcount]=useState(10)
+ {/* const[count,setcount]=useState(10)
   function btn(){
-   {/* const newobj={...count}
+    const newobj={...count}
     newobj.user="disha"
     newobj.age=15
    setcount(newobj)
@@ -14,18 +15,17 @@ const App = () => {
   //this is batching concept in reCtat
   // setcount(val=>(val+1))
    //setcount(val=>(val+1))
-  setcount(val=>(val+1))
+  //setcount(val=>(val+1))
    
  
-  }
+  
   return (
     <>
+<Navbaar/>
+
    
-    <Notes/>
-    <h3>{count}</h3>
-   <button className="bg-blue-100 rounded-2xl"onClick={btn}>click</button>
     </>
   )
-}
 
+}
 export default App
