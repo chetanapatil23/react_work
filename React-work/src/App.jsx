@@ -4,6 +4,8 @@ import Fromhandling from "./Formhandling"
 import Notes from "./Notes"
 import Navbaar from "./Navbaar"
 import RightContent from "./RightContent"
+import Api from "./Api"
+import Gallery from "./Gallery"
 const App = () => {
  {/* const[count,setcount]=useState(10)
   function btn(){
@@ -21,9 +23,9 @@ const App = () => {
   
   return (
     <>
-<Navbaar/>
+    <Gallery/>
 
-   
+
     </>
   )
 
